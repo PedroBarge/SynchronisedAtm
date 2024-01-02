@@ -9,10 +9,11 @@ public class Main {
 
         depositThread1.start();
         depositThread1.join();
-        depositThread2.start();
-        depositThread1.join();
         withdrawalThread1.start();
         withdrawalThread1.join();
+
+        depositThread2.start();
+        depositThread1.join();
         withdrawalThread2.start();
         withdrawalThread2.join();
 
